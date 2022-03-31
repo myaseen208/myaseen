@@ -1,0 +1,64 @@
+library(future)
+
+plan(multisession)
+
+library(doParallel)
+library(foreach)
+
+Clusters <- makeCluster(detectCores() - 1) # convention to leave 1 core for OS
+registerDoParallel(Clusters)
+options(Ncpus = detectCores() - 1, mc.cores = detectCores() - 1, scipen = 999)
+
+# remotes::install_github("hrbrmstr/dtupdate")
+
+library(dtupdate)
+# github_update()
+
+github_update(
+    auto.install = c(FALSE, TRUE)[2]
+  , ask          = c(FALSE, TRUE)[1]
+  , widget       = c(FALSE, TRUE)[1]
+  , dependencies = c(FALSE, TRUE)[2]
+  , libpath      = .libPaths()[1]
+  )
+
+
+update.packages(ask = FALSE)
+# update.packages(oldPkgs = old.packages(), ask = FALSE)
+pacman::p_up(update = TRUE, ask = FALSE)
+
+
+library(pak)
+library(tidyverse)
+library(tidytable)
+library(collapse)
+library(pkgdepends)
+
+dt1 <-
+  installed.packages() %>%
+  qDT() %>%
+  fselect(Package) %>% 
+  roworder(Package)
+
+dt2 <-
+  tools::CRAN_package_db() %>% 
+  qDT() %>% 
+  fselect(Package) %>% 
+  roworder(Package)
+
+dt12 <- 
+  inner_join.(dt1, dt2) %>% 
+  qDT() %>% 
+  funique()
+
+pkg_install(
+    pkg          = dt12 %>% 
+                   pull.(Package) %>% 
+                   dput()
+  , upgrade      = TRUE
+  , ask          = FALSE
+  , dependencies = as_pkg_dependencies(deps = TRUE)
+)
+
+library(pak)
+pkg_install("openintro")

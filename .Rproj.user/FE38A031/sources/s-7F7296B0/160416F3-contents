@@ -4,12 +4,16 @@ project:
 
 website:
   title: "Muhammad Yaseen"
-  navbar:
-    background: primary
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Basics"
+        contents:
+          - index.qmd
+          - talks.qmd
+          - about.qmd
+      
 
 format:
   html:
