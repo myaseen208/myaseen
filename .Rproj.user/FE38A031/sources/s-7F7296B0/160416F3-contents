@@ -8,11 +8,11 @@ website:
     style: "docked"
     search: true
     contents:
-      - section: "Basics"
+      - section: "Introduction"
         contents:
           - index.qmd
-          - talks.qmd
           - about.qmd
+          
       
 
 format:
