@@ -3,7 +3,7 @@
     "path": "D:/MYaseen208_B0-22-7A-E9-23-9B/Consultancy/Mr._M._Yaseen/2022-03-30_Quarto/Tutorial/05-Websites/website/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "752432851",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1648708061923.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "2,18",
+        "cursorPosition": "0,0",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1648708126,
+    "lastKnownWriteTime": 1648718056,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1648708126895,
+    "last_content_update": 1648718056949,
     "read_only": false,
     "read_only_alternatives": []
 }

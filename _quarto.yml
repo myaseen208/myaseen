@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "website"
+  title: "Muhammad Yaseen"
   navbar:
     background: primary
     left:
