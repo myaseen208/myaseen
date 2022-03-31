@@ -1,0 +1,37 @@
+cd D:/MYaseen208_B0-22-7A-E9-23-9B/Consultancy/Mr._M._Yaseen/2022-03-30_Quarto/Tutorial/05-Websites/website
+
+# Init git in the /website/public/ folder
+git init
+
+# Add and commit the changes
+git add .
+git commit -m "first commit"
+
+# Set origin
+git remote add origin https://github.com/myaseen208/myaseen.git
+# git remote set-url origin https://myaseen208@github.com/myaseen208/myaseen.git
+
+# Rename local branch
+git branch -M main
+git push -u origin main
+
+
+git rm -r --cached post/python_for_non-programmers
+git commit -m "Removed folder from repository"
+git push -u origin main
+
+# And push your updates online
+git push -u origin main
+# git push -u origin main --force
+
+# git push --set-upstream origin master
+# git push -f origin master # where -f stands for "force commit"
+git status
+
+Token 
+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
+
+git init
+
+git config --global user.email "myaseen@huskers.unl.edu"
+git config --global user.name "MYaseen"
