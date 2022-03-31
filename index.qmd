@@ -1,11 +1,11 @@
 ---
-title: "website"
+title: "MYaseen"
 ---
 
-This is a Quarto website.
+-   **Data Scientist** with **twenty-two years of teaching & research experience** executing data driven decisions & solutions to increase efficiency & accuracy
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+-   Experienced at developing statistical models, using predictive data modeling & analyzing data algorithms to deliver insights & implement action-oriented solutions to complex problems
 
-```{r}
-1 + 1
-```
+-   Proficient in developing R package/software for statistical analysis & machine learning
+
+-   Looking to use my academic & professional qualification to manage statistical machine learning & data related solutions to achieve research & business goals
